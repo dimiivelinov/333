@@ -46,16 +46,16 @@ export default function Header() {
       </div>
 
       {/* Header principal - OPTIMIZADO PARA DESKTOP */}
-      <div className="bg-white/95 backdrop-blur-xl border-b border-blue-100">
+      <div className="bg-white/95 backdrop-blur-xl border-b border-blue-100 py-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center py-0.5 lg:py-1">
+          <div className="flex justify-between items-center py-1">
             {/* Logo optimizado para desktop */}
             <Link to="/" className="flex items-center space-x-3 lg:space-x-4 hover-lift-intense">
               <div className="flex items-center justify-center">
                 <img 
                   src="/wasabilogo.jpg" 
                   alt="Wasabi Trader Logo" 
-                  className="h-12 sm:h-16 lg:h-20 xl:h-24 w-auto object-contain"
+                  className="h-10 sm:h-12 lg:h-14 xl:h-16 w-auto object-contain"
                   style={{ maxWidth: '100%', height: 'auto' }}
                 />
               </div>
@@ -83,31 +83,31 @@ export default function Header() {
               </nav>
                 
               {/* Teléfono optimizado para desktop */}
-              <div className="flex items-center space-x-3 bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-200 px-4 lg:px-6 py-2 lg:py-3 rounded-xl hover-lift-intense shine-effect">
-                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-                  <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-white" />
+              <div className="flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-200 px-3 lg:px-4 py-1.5 lg:py-2 rounded-lg hover-lift-intense shine-effect">
+                <div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+                  <Phone className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
                 </div>
                 <div>
-                  <a href="tel:+34621508300" className="font-black text-base lg:text-lg text-gray-900 hover:text-blue-600 transition-colors">
+                  <a href="tel:+34621508300" className="font-black text-sm lg:text-base text-gray-900 hover:text-blue-600 transition-colors">
                     621 50 83 00
                   </a>
-                  <p className="text-xs font-bold text-blue-600">Llamada gratuita</p>
+                  <p className="text-xs font-bold text-blue-600 leading-tight">Llamada gratuita</p>
                 </div>
               </div>
               
               {/* CTA optimizado para desktop */}
-              <a href="#formulario" className="btn-primary text-white px-4 lg:px-8 py-2 lg:py-3 rounded-xl font-black text-sm lg:text-lg hover-lift-intense shine-effect whitespace-nowrap">
+              <a href="#formulario" className="btn-primary text-white px-3 lg:px-6 py-1.5 lg:py-2 rounded-lg font-black text-xs lg:text-sm hover-lift-intense shine-effect whitespace-nowrap">
                 EMPEZAR FORMULARIO
               </a>
             </div>
             
             {/* Navegación tablet */}
-            <div className="hidden lg:flex xl:hidden items-center space-x-4">
-              <a href="tel:+34621508300" className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-600 transition-colors">
-                <Phone className="w-4 h-4" />
+            <div className="hidden lg:flex xl:hidden items-center space-x-3">
+              <a href="tel:+34621508300" className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-blue-600 transition-colors text-sm">
+                <Phone className="w-3 h-3" />
                 <span>621 50 83 00</span>
               </a>
-              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg font-black hover:from-blue-400 hover:to-blue-500 transition-colors">
+              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1.5 rounded-lg font-black hover:from-blue-400 hover:to-blue-500 transition-colors text-sm">
                 FORMULARIO
               </a>
             </div>
@@ -115,13 +115,13 @@ export default function Header() {
             {/* Botón menú móvil */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-3 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 text-white hover-lift-intense shadow-blue-glow"
+              className="lg:hidden p-2 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 text-white hover-lift-intense shadow-blue-glow"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-5 h-5" />
               )}
             </button>
           </div>
